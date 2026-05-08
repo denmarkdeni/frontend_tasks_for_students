@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap');
+
+/* Light theme variables */
+.wrapper.light {
+  --bg: #f0f4ff;
+  --surface: #ffffff;
+  --text: #1a1a2e;
+  --muted: #6b7280;
+  --border: #e5e7eb;
+}
+
+/* Dark theme variables */
+.wrapper.dark {
+  --bg: #1a1a2e;
+  --surface: #16213e;
+  --text: #f0f4ff;
+  --muted: #9ca3af;
+  --border: #2e2e4e;
+}
+
+/* Base reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Full-page wrapper */
+.wrapper {
+  min-height: 100vh;
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: 'Nunito', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 24px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Theme toggle button (top right feel) */
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 8px 16px;
+  background: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.theme-toggle:hover {
+  opacity: 0.75;
+}
+
+/* Title */
+.title {
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+/* Counter display box */
+.counter-display {
+  background: var(--surface);
+  border: 2px solid var(--border);
+  border-radius: 20px;
+  width: 160px;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+/* The big number */
+.count-number {
+  font-size: 4rem;
+  font-weight: 800;
+}
+
+/* Message text */
+.message {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.message.positive  { color: #22c55e; }
+.message.negative  { color: #ef4444; }
+.message.neutral   { color: #6b7280; }
+
+/* Button row */
+.btn-row {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Each counter button */
+.counter-btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 12px;
+  color: #ffffff;
+  font-size: 1rem;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.15s, opacity 0.2s;
+}
+
+.counter-btn:hover {
+  opacity: 0.85;
+  transform: scale(1.05);
+}
+
+.counter-btn:active {
+  transform: scale(0.97);
+}
