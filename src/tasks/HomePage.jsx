@@ -26,9 +26,9 @@ const tasks = [
   {
     id: 4,
     number: "04",
-    title: "JavaScript Basics",
+    title: "Validation Form",
     category: "JS",
-    topics: ["Variables", "Functions", "Events", "DOM Manipulation", "Conditionals", "Loops"],
+    topics: ["Form", "Events", "Functions"],
   },
   {
     id: 5,
