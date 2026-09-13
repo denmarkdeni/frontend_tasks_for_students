@@ -4,8 +4,8 @@
   --ink: #dfe3d9;
   --ink-soft: #fff;
   --rule: #ded7c4;
-  --accent: #33448a;
-  --accent-soft: #e5e9f5;
+  --accent: #438b41;
+  --accent-soft: #5cb659;
   --error: #ee7067;
   --strength-1: #ef463a;
   --strength-2: #ec9f3a;
@@ -114,8 +114,8 @@ textarea {
 input:focus,
 textarea:focus,
 select:focus {
-  border-color: var(--accent);
-  box-shadow: 0 0 0 3px var(--accent-soft);
+  border-color: var(--paper);
+  box-shadow: 0 0 0 3px var(--ink-soft);
 }
 
 input.invalid,
@@ -177,9 +177,9 @@ select.invalid {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   font-size: 0.85rem;
   font-weight: 600;
-  color: var(--accent);
-  background: var(--accent-soft);
-  border: 1px solid var(--accent);
+  color: var(--paper);
+  background: var(--ink);
+  border: 1px solid var(--paper);
   border-radius: 3px;
   padding: 0.5rem 0.9rem;
   cursor: pointer;
@@ -267,7 +267,7 @@ select.invalid {
 }
 
 .btn-primary:hover {
-  background: #2a3771;
+  background: var(--accent-soft);
 }
 
 .btn-secondary {

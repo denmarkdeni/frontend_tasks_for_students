@@ -1,0 +1,86 @@
+.id-card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  padding: 2.5rem 1.5rem;
+}
+
+.id-card {
+  width: 260px;
+  margin: 0;
+  padding: 2.25rem 1.5rem 2rem;
+  background: #06064e;
+  border-radius: 28px;
+  text-align: center;
+  font-family: Georgia, "Times New Roman", serif;
+  color: #ffffff;
+    transition: all 0.2s linear;
+}
+
+.id-card:hover{
+    box-shadow:
+        0 0 18px 4px rgba(58, 242, 255, 0.55),
+        0 0 46px 14px rgba(59, 255, 245, 0.32);
+    transform: translate(0px, -5px);
+}
+
+.id-card-title {
+  margin: 0 0 1.75rem;
+  font-size: 1.7rem;
+  font-weight: 700;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.45);
+}
+
+.id-card-avatar {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 1.75rem;
+  border-radius: 50%;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 20px 4px rgba(255, 221, 87, 0.5);
+}
+
+.id-card-avatar-inner {
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  background: linear-gradient(160deg, #4c8dff, #1d3fd6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.id-card-name {
+  margin: 0 0 0.9rem;
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+
+.drop-cap {
+  color: #2440ff;
+  font-size: 1.9rem;
+  font-weight: 800;
+}
+
+.id-card-age {
+  margin: 0 0 1.4rem;
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.id-card-subtitle {
+  margin: 0 0 0.6rem;
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: #d8d8d8;
+}
+
+.id-card-thanks {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #eeeeee;
+}
