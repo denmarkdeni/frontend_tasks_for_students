@@ -44,6 +44,13 @@ const tasks = [
     category: "React",
     topics: ["Math", "Form handling", "map"],
   },
+  {
+    id: 7,
+    number: "07",
+    title: "Live Date Time",
+    category: "React",
+    topics: ["useState", "useEffect"],
+  }
 ];
 
 const categoryMeta = {
